@@ -1,3 +1,23 @@
+const optionOne = document.getElementById('op1');
+const optionTwo = document.getElementById('op2');
+const optionThree = document.getElementById('op3');
+const optionFour = document.getElementById('op4');
+const previous = document.getElementById('prevBtn');
+const next = document.getElementById('nextBtn');
+const question = document.getElementById('questionText')
+
+
+
+
+function showQuestion(){
+    question.innerText = questions.text;
+
+}
+
+
+
+
+
 const questions = [
     {
         text: 'How many provinces are there in Canada?',
@@ -8,7 +28,7 @@ const questions = [
                 '12 provinces',
                 '10 provinces and 3 territories'
           ],
-        answer: '10 provinces and 3 territories'
+        answer: 3
 
     },
 
@@ -21,7 +41,7 @@ const questions = [
                 'Toronto',
                 'Montreal'
           ],
-        answer: 'Toronto'
+        answer: 2
 
     },
 
@@ -34,7 +54,7 @@ const questions = [
                 'Baseball',
                 'Hockey'
           ],
-        answer: 'Hockey'
+        answer: 3
 
     },
 
@@ -47,8 +67,17 @@ const questions = [
                 '-51°C',
                 '-45°C'
           ],
-        answer: '-63°C'
+        answer: 0
 
     },
 
 ]
+
+showQuestion();
+
+optionOne.addEventListener('click', op1);
+optionTwo.addEventListener('click', op2);
+optionThree.addEventListener('click', op3);
+optionFour.addEventListener('click', op4);
+previous.addEventListener('click', prevBtn);
+next.addEventListener('click', nextBtn);

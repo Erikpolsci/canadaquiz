@@ -9,7 +9,6 @@
 
 body {
     background-image: url("https://cdn.pixabay.com/photo/2016/01/23/14/55/canada-1157521_960_720.jpg");
-
     background-size:cover;
     font-family: Roboto;
    
@@ -34,13 +33,9 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+  
 }
 
-.list{
-    list-style:none;
-    
-
-}
 
 .question{
     font-size:2rem;
@@ -51,12 +46,65 @@ body {
 
 .btn {
   
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 2rem;
     margin: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border:0.20em solid;
+    transition: 0.3s;
+
+
    
 }
 
-.options {
-    
+.btn:hover{
+    border-color: red;
 }
+
+.options {
+    display: grid;
+
+}
+
+.controls {
+display: flex;
+justify-content: center;
+gap:50px;
+
+}
+
+.btn-controls{
+    font-size: 1rem;
+    padding: 2rem;
+    margin: 1rem auto;
+    border-radius: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border:0.16em solid;
+
+
+
+}
+
+.btn-controls:hover {
+    background-color: rgb(227, 221, 221);
+    color: black;
+}
+
+.btn-controls:active {
+    background-color: #34677e;
+    outline: none;
+}
+
+
+
+/* .hide {
+    display: none;
+} */
+
+
+

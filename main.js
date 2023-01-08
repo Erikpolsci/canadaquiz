@@ -9,17 +9,8 @@ const question = document.getElementById('questionText')
 
 
 
-function showQuestion(){
-    question.innerText = questions.text;
-
-}
-
-
-
-
-
 const questions = [
-    {
+    {   id: 0,
         text: 'How many provinces are there in Canada?',
         options:
          [
@@ -32,7 +23,7 @@ const questions = [
 
     },
 
-    {
+    {   id: 1,
         text: 'What is the name of the Capital of Canada?',
         options:
          [
@@ -45,7 +36,7 @@ const questions = [
 
     },
 
-    {
+    {   id: 2,
         text: 'What is the most popular sport in Canada?',
         options:
          [
@@ -58,7 +49,7 @@ const questions = [
 
     },
 
-    {
+    {   id: 3,
         text: 'What is the coldest ever recorded temperature in Canada?',
         options:
          [
@@ -73,7 +64,27 @@ const questions = [
 
 ]
 
-showQuestion();
+
+function beginQuiz(id){
+    //id=0;
+    question.innerText = questions[id].text;
+
+
+    optionOne.innerText = questions[id].options[0];
+    optionTwo.innerText = questions[id].options[1]
+    optionThree.innerText = questions[id].options[2]
+    optionFour.innerText = questions[id].options[3]
+
+
+}
+
+
+
+const options = document.querySelectorAll('.btn');
+console.log(options)
+
+
+beginQuiz(0);
 
 optionOne.addEventListener('click', op1);
 optionTwo.addEventListener('click', op2);

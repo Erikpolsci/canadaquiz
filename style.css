@@ -34,6 +34,7 @@ body {
   opacity: 0.9;
   padding: 20px;
   border-radius: 10px;
+
   
 }
 
@@ -55,6 +56,9 @@ body {
     border:0.20em solid;
     transition: 0.3s;
 
+    
+
+
 
    
 }
@@ -65,6 +69,8 @@ body {
 
 .options {
     display: grid;
+    font-weight: 400;
+
 
 }
 

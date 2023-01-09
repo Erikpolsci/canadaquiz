@@ -14,12 +14,12 @@ const questions = [
         text: 'How many provinces are there in Canada?',
         options:
          [
-                '10 provinces',
-                '13 provinces',
-                '12 provinces',
-                '10 provinces and 3 territories'
-          ],
-        answer: 3
+                {txt:'10 provinces', answer:false},
+                {txt:'13 provinces', answer:false},
+                {txt:'12 provinces', answer:false},
+                {txt:'10 provinces and 3 territories', answer:true}
+          ]
+    
 
     },
 
@@ -27,12 +27,11 @@ const questions = [
         text: 'What is the name of the Capital of Canada?',
         options:
          [
-                'Vancouver',
-                'Ottawa',
-                'Toronto',
-                'Montreal'
+                {txt:'Vancouver', answer:false},
+                {txt:'Ottawa', answer:true},
+                {txt:'Toronto', answer:false},
+                {txt:'Montreal', answer:false}
           ],
-        answer: 2
 
     },
 
@@ -40,12 +39,12 @@ const questions = [
         text: 'What is the most popular sport in Canada?',
         options:
          [
-                'Skiig',
-                'Snowboard',
-                'Baseball',
-                'Hockey'
+            {txt:'Skiig', answer:false},
+            {txt:'Snowboard', answer:false},
+            {txt:'Baseball', answer:false},
+            {txt:'Hockey', answer:true}
           ],
-        answer: 3
+       
 
     },
 
@@ -53,12 +52,12 @@ const questions = [
         text: 'What is the coldest ever recorded temperature in Canada?',
         options:
          [
-                '-63°C',
-                '-75°C',
-                '-51°C',
-                '-45°C'
+            {txt:'-63°C', answer:true},
+            {txt:'-75°C', answer:false},
+            {txt:'-51°C', answer:false},
+            {txt:'-45°C', answer:false}
           ],
-        answer: 0
+        
 
     },
 
@@ -70,23 +69,28 @@ function beginQuiz(id){
     question.innerText = questions[id].text;
 
 
-    optionOne.innerText = questions[id].options[0];
-    optionTwo.innerText = questions[id].options[1]
-    optionThree.innerText = questions[id].options[2]
-    optionFour.innerText = questions[id].options[3]
+    optionOne.innerText = questions[id].options[0].txt;
+    optionTwo.innerText = questions[id].options[1].txt;
+    optionThree.innerText = questions[id].options[2].txt
+    optionFour.innerText = questions[id].options[3].txt
+
+    optionOne.value = questions[id].options[0].answer;
+    optionTwo.value = questions[id].options[1].answer;
+    optionThree.value = questions[id].options[2].answer;
+    optionFour.value = questions[id].options[3].answer;
 
 
-}
+
 
 
 
 const options = document.querySelectorAll('.btn');
 console.log(options)
-
+}
 
 beginQuiz(0);
 
-optionOne.addEventListener('click', op1);
+
 optionTwo.addEventListener('click', op2);
 optionThree.addEventListener('click', op3);
 optionFour.addEventListener('click', op4);

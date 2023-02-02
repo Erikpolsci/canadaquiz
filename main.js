@@ -82,17 +82,32 @@ function beginQuiz(id){
 
 
 
-
-
-const options = document.querySelectorAll('.btn');
-console.log(options)
 }
 
+const options = document.querySelectorAll('.btn');
+options.addEventListener('click', () =>{
+        if(questions.answer === true){
+            options.style.background = "green"
+        }
+    })
+
+//     select('.bagInfo--qttminus').addEventListener('click', () =>{
+//         if(bagQtt > 1) {
+//             bagQtt--
+//             select('.bagInfo--qt').innerHTML = bagQtt
+//         }
+//     })
+
+//     console.log('.bagInfo--qttadd')
+// }
+// }
+
 beginQuiz(0);
+
 
 
 optionTwo.addEventListener('click', op2);
 optionThree.addEventListener('click', op3);
 optionFour.addEventListener('click', op4);
 previous.addEventListener('click', prevBtn);
-next.addEventListener('click', nextBtn);
+next.addEventListener('click', nextBtn)

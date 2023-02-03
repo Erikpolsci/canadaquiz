@@ -5,6 +5,8 @@ const optionFour = document.getElementById('op4');
 const previous = document.getElementById('prevBtn');
 const next = document.getElementById('nextBtn');
 const question = document.getElementById('questionText')
+const select = (element) => document.querySelector(element);
+
 
 
 
@@ -85,11 +87,28 @@ function beginQuiz(id){
 }
 
 const options = document.querySelectorAll('.btn');
-options.addEventListener('click', () =>{
-        if(questions.answer === true){
-            options.style.background = "green"
-        }
+    options.forEach((btn) =>{
+        btn.addEventListener("click",(e) => {
+            const options = e.currentTarget.dataset.btn;
+            const answersOptions = questions.filter((questionOptions) => {
+                //console.log(menuOption.foodType)
+                if(questionOptions.answer === false){
+                    select('btn').style.background = 'red'; 
+                } else{
+                    select('btn').style.background = 'green'; 
+
+                }       
+            });
+            // //console.log(menuFoodType);
+            // if(options.answer === true){
+            //     select('btn').style.background = 'green'; 
+            // } else {
+            //     showOptionItems(menuFoodType)
+            // }
+        
+        })
     })
+
 
 //     select('.bagInfo--qttminus').addEventListener('click', () =>{
 //         if(bagQtt > 1) {
@@ -106,8 +125,3 @@ beginQuiz(0);
 
 
 
-optionTwo.addEventListener('click', op2);
-optionThree.addEventListener('click', op3);
-optionFour.addEventListener('click', op4);
-previous.addEventListener('click', prevBtn);
-next.addEventListener('click', nextBtn)

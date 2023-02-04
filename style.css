@@ -107,11 +107,16 @@ gap:50px;
     outline: none;
 }
 
+.btn.right{
+    background-color: red;
+    color: black;
+}
+
+.btn.wrong {
+    background-color: green;
 
 
-/* .hide {
-    display: none;
-} */
+}
 
 
 

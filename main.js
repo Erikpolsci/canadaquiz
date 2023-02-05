@@ -4,7 +4,7 @@ const prevQuestion = document.getElementsById('prevBtn')
 const nextQuestion = document.getElementById('nextBtn')
 const container = document.querySelector('.container')
 
-
+const randomQuestion, currentQuestionIndex
 
 
 let questions = [
@@ -64,7 +64,8 @@ let questions = [
 
 
 function nextQuestion() {
-
+    randomQuestion = questions.sort(() => Math.random() - .5)
+    currentQuestionIndex = 0;
 }
 
 function selectedAnswer() {

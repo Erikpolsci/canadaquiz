@@ -66,6 +66,7 @@ let questions = [
 function nextQuestion() {
     randomQuestion = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0;
+    showQuestion(randomQuestion[currentQuestionIndex])
 }
 
 function selectedAnswer() {

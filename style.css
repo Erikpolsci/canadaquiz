@@ -43,6 +43,7 @@ body {
     font-size:2rem;
     font-weight: 700;
     padding-bottom: 2rem;
+    text-align:center;
 
 }
 
@@ -108,14 +109,18 @@ gap:50px;
 }
 
 .btn.right{
-    background-color: red;
+    background-color: green;
     color: black;
 }
 
 .btn.wrong {
-    background-color: green;
+    background-color: red;
 
 
+}
+
+.hide{
+    display: none;
 }
 
 

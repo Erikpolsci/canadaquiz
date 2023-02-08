@@ -53,7 +53,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## This project was made with the intention of training important concepts in javascript and CSS. Array manipulation, DOM insertions, loops and logic.
+## This project was made with the intention of training important concepts in JavaScript and CSS. Array manipulation, DOM insertions, loops and logic.
 And of course, spreading knowledge about the country I chose to live in.
 
 ![This is an image](https://github.com/Erikpolsci/canadaquiz/blob/master/images/cndq.jpg)
@@ -77,7 +77,7 @@ And of course, spreading knowledge about the country I chose to live in.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-click on the link below or on the side and have fun!
+Click on the link below or on the side and have fun!
  <br />
 https://erikpolsci.github.io/canadaquiz/
 

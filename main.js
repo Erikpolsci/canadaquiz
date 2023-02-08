@@ -69,7 +69,7 @@ const questions = [
 ]
 
 function startGame () {
-    console.log('started')
+    
     start.classList.add('hide')
     randomQuestion = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0

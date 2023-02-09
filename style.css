@@ -84,7 +84,7 @@ gap:50px;
 }
 
 .btn-controls{
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 2rem;
     margin: 1rem auto;
     border-radius: 20px;
@@ -93,7 +93,7 @@ gap:50px;
     color: black;
     font-weight: bold;
     background-color: white;
-    border:0.16em solid;
+    border:0.10em solid;
 
 
 
@@ -109,7 +109,7 @@ gap:50px;
     outline: none;
 }
 
-.btn.right{
+.btn.correct{
     background-color: green;
     color: black;
 }

@@ -48,7 +48,7 @@ const questions = [
         text: 'What is the most popular sport in Canada?',
         options:
          [
-            {txt:'Skiig', answer:false},
+            {txt:'Skiing', answer:false},
             {txt:'Snowboard', answer:false},
             {txt:'Baseball', answer:false},
             {txt:'Hockey', answer:true}
